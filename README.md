@@ -79,46 +79,44 @@ This combination provided the best predictive performance.
 
 ## 🏗 Project Structure
 
+```bash
 molecular-melting-point-prediction/
 │
 ├── notebooks/
-│ └── solution_4_rdkit_morgan.ipynb # Final best-performing model
+│   └── solution_4_rdkit_morgan.ipynb   # Final best-performing notebook
 │
 ├── src/
-│ ├── preprocess.py # Data cleaning and SMILES validation
-│ ├── features.py # RDKit descriptors + Morgan fingerprints
-│ ├── model.py # XGBoost regression with log transform
-│ └── predict.py # Submission file generation
+│   ├── preprocess.py   # Data cleaning + SMILES validation
+│   ├── features.py     # RDKit descriptors + Morgan fingerprints
+│   ├── model.py        # XGBoost regression (log-transformed target)
+│   └── predict.py      # Submission file generation
 │
-├── submissions/ # Generated Kaggle submissions
-├── requirements.txt # Project dependencies
-├── .gitignore # Files ignored by Git
-└── README.md # Project documentation
+├── submissions/        # Generated Kaggle submissions
+│
+├── requirements.txt    # Project dependencies
+├── README.md           # Project documentation
+└── .gitignore          # Ignored files
+```
 
+--- 
 
----
+## 🧠 Skills Demonstrated 
+- Cheminformatics feature engineering
+- RDKit molecular descriptor extraction
+- Morgan fingerprint generation
+- Regression modeling
+- Feature experimentation
+- ML pipeline modularization
+- Kaggle competition workflow
 
-## 🧠 Skills Demonstrated
+--- 
+## 🚀 Technologies Used 
+- Python
+- RDKit
+- Pandas
+- Scikit-learn
+- XGBoost
 
-- Cheminformatics feature engineering  
-- RDKit molecular descriptor extraction  
-- Morgan fingerprint generation  
-- Regression modeling  
-- Feature experimentation  
-- ML pipeline modularization  
-- Kaggle competition workflow  
-
----
-
-## 🚀 Technologies Used
-
-- Python  
-- RDKit  
-- Pandas  
-- Scikit-learn  
-- XGBoost  
-
----
+--- 
 
 This project demonstrates applying machine learning to **scientific molecular data**, combining domain-specific feature engineering with modern regression techniques.
-
